@@ -1,0 +1,52 @@
+/* Combining CSS Selectors */
+h1, ul, p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: maroon;
+}
+
+/* CSS Positioning */
+h1 {
+    position: relative;
+    left: 20px;
+}
+
+/* CSS Display */
+ul,p {
+    display: inline-block;
+    background-color:forestgreen;
+}
+
+/* Float */
+p {
+    float: center;
+    width: 50%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 1rem; 
+    }
+    ul {
+        display: block;
+    }
+    p {
+        height: auto; 
+        width: 100%;  
+    }
+}
+
+/* Flexbox */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Grid */
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
